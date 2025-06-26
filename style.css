@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body { 
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
-    background-color: #1f2937;
+}
+
+.color {
+    background-color: #1f2937 ;
 }
 
 /* header section  */
@@ -15,14 +25,15 @@ body {
     justify-content: space-around;
     align-items: center;
     color: white;
-    font-size: 20px;
+    font-size: 24px;
+    padding-top: 30px;
 }
 
 ul {
     list-style: none;
     display: flex;
     gap: 20px;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .container1 ul a {
@@ -43,7 +54,8 @@ ul {
     color: white;
     align-items: center;
     padding: 0px;
-    margin-bottom: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -57,19 +69,129 @@ button {
     outline: none;
     border: none;
     padding: 5px 20px;
+    margin-top: 10px;
 }
 
 .hero-text {
-    max-width: 300px;
+    max-width: 350px;
     padding-bottom: 20px;
 }
 
 .hero-text h1 {
-    font-size: 40px;
-    margin-bottom: 0px;
+    font-size: 48px;
+    color: #f9faf8;
 }
 
 .hero img {
     height: 220px;
 
+}
+
+/* information section  */
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 50px;
+    margin-bottom: 50px;
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.infotitle {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  max-width: 400px;
+  text-align: center;
+}
+
+.info img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: solid #3882F6;
+  border-radius: 10px;
+}
+
+.text {
+  font-size: 14px;
+  color: rgb(66, 66, 66);
+  word-wrap: break-word;
+  max-width: 150px;
+}
+
+/* quote section  */
+
+.container3 {
+    display: flex;
+    background-color: #e5e7Eb;
+    padding: 60px 20px;
+    justify-content: center;
+}
+
+.quotebox {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.quote {
+    font-style: italic;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 300;
+}
+
+.name {
+    align-self: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.container4 {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    background-color: #3882F6;
+    max-width: 900px;
+    align-self: center;
+    margin: 100px;
+    padding: 50px 100px;
+    border-radius: 10px;
+    color: white;
+}
+
+.cta-head {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container4 button {
+    background-color: #3882F6;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid white
+}
+
+footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
